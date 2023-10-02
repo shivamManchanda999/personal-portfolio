@@ -1,0 +1,10 @@
+/* 
+    File Name: styles.css
+    Student’s Name: Shivam Manchanda
+    StudentID: 301300321
+    Date: 02/10/2023
+*/
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
