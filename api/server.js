@@ -18,6 +18,18 @@ app.get("/about", (req, res) => {
   res.render("about");
 });
 
+app.get("/projects", (req, res) => {
+  res.render("projects");
+});
+
+app.get("/contact", (req, res) => {
+  res.render("contact");
+});
+
+app.get("/services", (req, res) => {
+  res.render("services");
+});
+
 const listener = app.listen(0, () => {
   const { port } = listener.address();
   process.send({ port });
