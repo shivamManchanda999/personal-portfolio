@@ -1,29 +1,32 @@
+// Required dependencies
 const express = require("express");
+// Creating a new router
 const router = express.Router();
 
-// Home route
+// Route for home page
 router.get("/", (req, res) => {
   res.render("home");
 });
 
-// About route
+// Route for about page
 router.get("/about", (req, res) => {
   res.render("about");
 });
 
-//services route
+// Route for services page
 router.get("/services", (req, res) => {
   res.render("services");
 });
 
-// Contact route
+// Route for contact page
 router.get("/contact", (req, res) => {
   res.render("contact");
 });
 
-// Projects route
+// Route for projects page
 router.get("/projects", (req, res) => {
   res.render("projects");
 });
 
+// Exporting the router for use in other modules
 module.exports = router;
