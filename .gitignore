@@ -67,3 +67,4 @@ dist
 
 # Node.js debugger
 *.ndb
+.vercel
