@@ -5,8 +5,11 @@ const app = express();
 app.set("view engine", "ejs");
 app.set("views", "./views");
 
-app.get("/api/", (req, res) => {
+app.get("/", (req, res) => {
   res.render("home");
 });
 
-module.exports = app;
+const listener = app.listen(0, () => {
+  const { port } = listener.address();
+  process.send({ port });
+});
