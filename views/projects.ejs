@@ -1,0 +1,46 @@
+
+<%- include('partials/header') %>
+<div id="projects" class="py-20 px-4 h-screen bg-gray-100 flex flex-col items-center justify-center">
+    <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl mb-10">Projects</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            
+            <!-- Project Card -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                <img src="/images/Netflix_logo.png" alt="Project Image" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl mb-4">Netflix GPT</h3>
+                    <p class="text-gray-700">A cutting-edge movie-watching platform with personalized movie recommendations.</p>
+                    <a href="#" class="mt-4 inline-block text-blue-600 hover:text-blue-500">Learn More &rarr;</a>
+                </div>
+            </div>
+            
+            <!-- ... Replicate the above block for additional projects ... -->
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                <img src="/images/phishing.jpeg" alt="Project Image" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl mb-4">Phishing Analyzer</h3>
+                    <p class="text-gray-700">A Chrome Extension which catches phishing emails as soon as you recieve them with a cutting edge machine learning model deployed at the backend.</p>
+                    <a href="#" class="mt-4 inline-block text-blue-600 hover:text-blue-500">Learn More &rarr;</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                <img src="/images/bot.png" alt="Project Image" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl mb-4">Sanity Bot</h3>
+                    <p class="text-gray-700">Web-based tool that helps in scheduling a test run and executing it, and handling the post run
+                        operation</p>
+                    <a href="#" class="mt-4 inline-block text-blue-600 hover:text-blue-500">Learn More &rarr;</a>
+                </div>
+            </div>
+
+            
+            
+        </div>
+
+    </div>
+</div>
+<%- include('partials/footer') %>
