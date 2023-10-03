@@ -14,6 +14,10 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
+app.get("/api/about", (req, res) => {
+  res.render("about");
+});
+
 const listener = app.listen(0, () => {
   const { port } = listener.address();
   process.send({ port });
