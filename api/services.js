@@ -14,4 +14,7 @@ app.get("/api/services", (req, res) => {
   res.render("services");
 });
 
-module.exports = app;
+const listener = app.listen(0, () => {
+  const { port } = listener.address();
+  process.send({ port });
+});

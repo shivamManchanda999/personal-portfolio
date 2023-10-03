@@ -14,4 +14,7 @@ app.get("/api/contact", (req, res) => {
   res.render("contact");
 });
 
-module.exports = app;
+const listener = app.listen(0, () => {
+  const { port } = listener.address();
+  process.send({ port });
+});
